@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const mongoose = require('mongoose');
 const PORT = 3001;
@@ -16,6 +17,7 @@ connection.once('open', function () {
     console.log('Connected to database');
 });
 
+app.use(cors());
 app.use(bodyParser.json());
 
 // GET list of all items
