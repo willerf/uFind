@@ -19,7 +19,7 @@ function Navbar() {
         test
       </div> 
       <div>
-        <Menu mode="horizontal" onClick={handleClick} selectedKeys={[curPage]}>
+        <Menu mode="horizontal" onClick={handleClick} selectedKeys={[curPage]} size={"large"}>
           
           <Menu.Item key="home">
             <Link to="/">Home</Link>
