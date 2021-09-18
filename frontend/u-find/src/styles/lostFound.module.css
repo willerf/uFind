@@ -1,0 +1,27 @@
+
+
+.fullPage {
+
+}
+
+.title {
+
+}
+
+.searchBar {
+
+}
+
+.cardHolder {
+    display: flex;
+    padding: 3%;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: aqua;
+    padding: 3%;
+    margin: 1%;
+    width: 400px;
+    box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.5);
+}
