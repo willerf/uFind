@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
-import { Modal, Button } from 'antd';
+import { Modal, Button, Input, Space } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
 
 function NewItem() {
   const [visible, setVisible] = useState(false);
@@ -28,7 +29,7 @@ function NewItem() {
   return (
     <>
       <Button type="primary" onClick={showModal} size={"large"}>
-        Open Modal with async logic
+        Enter Lost Item
       </Button>
       <Modal
         title="Title"
@@ -38,6 +39,20 @@ function NewItem() {
         onCancel={handleCancel}
       >
         <p>{modalText}</p>
+
+        <Space direction="vertical">
+          <Input size="large" placeholder="Enter your name" prefix={<UserOutlined />} />
+          <Input size="large" placeholder="Enter your email" prefix={<UserOutlined />} />
+
+          If you are able to locate the name of the owner, please enter it below.
+          <Input size="large" placeholder="Enter name of owner" prefix={<UserOutlined />} />
+          <Input size="large" placeholder="Title/description of item" prefix={<UserOutlined />} />
+          <Input size="large" placeholder="Location of item (e.g. SLC front desk, with me, etc.)" prefix={<UserOutlined />} />
+
+          <input id="image" type="file" />
+        </Space>
+
+
       </Modal>
     </>
   );

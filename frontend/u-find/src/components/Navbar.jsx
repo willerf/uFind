@@ -16,7 +16,6 @@ function Navbar() {
     <div className={navbarStyles.navbarHeader}>
       <div onClick={handleClick}>
         <Link to="/" className={navbarStyles.titleName}>uFind</Link>
-        test
       </div> 
       <div>
         <Menu mode="horizontal" onClick={handleClick} selectedKeys={[curPage]} size={"large"}>
@@ -26,11 +25,11 @@ function Navbar() {
           </Menu.Item>
 
           <Menu.Item key="lost-and-found">
-            <Link to="/lost-and-found">LostAndFound</Link>
+            <Link to="/lost-and-found">Lost And Found</Link>
           </Menu.Item>
 
           <Menu.Item key="add-self">
-            <Link to="/add-self">AddSelf</Link>
+            <Link to="/add-self">Notify Me</Link>
           </Menu.Item>
 
         </Menu>

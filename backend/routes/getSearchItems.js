@@ -4,8 +4,10 @@ let router = express.Router();
 
 const Item = require('../models/item.model');
 
-router.get('/', async (req, res) => {
+router.post('/', async (req, res) => {
     const allItems = await Item.find();
+
+    console.log(req.body);
 
     const searchTerm = req.body.search;
     const tokens = searchTerm.split(' ').map(token => token.toLowerCase());
@@ -13,9 +15,8 @@ router.get('/', async (req, res) => {
     const filteredItems = allItems.filter(item => {
         let match = false;
         tokens.forEach(token => {
-            const titleMatch = item.title.toLowerCase().includes(token);
             const descriptionMatch = item.description.toLowerCase().includes(token);
-            if (titleMatch || descriptionMatch) {
+            if (descriptionMatch) {
                 match = true;
             }
         });
