@@ -22,8 +22,8 @@ Overall, we are pleased that we were able to implement our initial idea in a way
 
 # What we learned
 
-We were relatively new to React going into the project, so we learned quite a lot about how this through the frontend component as well as how to effectively integrate with the backend. We also learned more about implementing more complex algorithms on the backend especially as it relates to string manipulation which we used for the item searching feature.
+We were relatively new to React going into the project, so we learned quite a lot about this through the frontend component as well as how to effectively integrate with the backend. We also learned more about implementing more complex algorithms on the backend especially as it relates to string manipulation which we used for the item searching feature.
 
 # What's next for uFind
 
-The main additional feature that we would like to implement in the future is some kind of registration system that is set up in way where people can register to receive an email when an item that is suspected to be theirs is found. We think that this would be a helpful feature for users so that they do not need to search for the an item that they lost until they find it on the site, but rather receive an email notifying them.
+The main additional feature that we would like to implement in the future is some kind of registration system that is set up in way where people can register to receive an email when an item that is suspected to be theirs is found. We think that this would be a helpful feature for users so that they do not need to search for the an item that they lost until they find it on the site, but rather receive an email notifying them. We would also like to add the ability to upload an image to help people identify their lost belongings.
