@@ -17,8 +17,8 @@ function Navbar() {
       <div onClick={handleClick}>
         <Link to="/" className={navbarStyles.titleName}>uFind</Link>
       </div> 
-      <div>
-        <Menu mode="horizontal" onClick={handleClick} selectedKeys={[curPage]} size={"large"}>
+      <div className={navbarStyles.menuSection}>
+        <Menu mode="horizontal" onClick={handleClick} selectedKeys={[curPage]}>
           
           <Menu.Item key="home">
             <Link to="/">Home</Link>

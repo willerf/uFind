@@ -21,7 +21,7 @@ function LostAndFound() {
             console.log(res);
             setItemList(res.data);
             
-          })
+        })
 
         console.log(result)
     }
@@ -35,7 +35,7 @@ function LostAndFound() {
     return (
         <div className={lostFoundStyles.fullPage}>
             <div className={lostFoundStyles.title}>
-                LostAndFound
+                Lost and Found
             </div>
             <div className={lostFoundStyles.topBar}>
             <Search

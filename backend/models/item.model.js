@@ -9,4 +9,4 @@ const itemSchema = mongoose.Schema({
   owner: { type: String, default: 'Unknown'},
 });
 
-module.exports = mongoose.model('Entry', itemSchema);
+module.exports = mongoose.model('Item', itemSchema);
